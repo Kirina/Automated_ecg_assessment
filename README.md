@@ -4,9 +4,16 @@ This repository conains code to assess the noise level present in ECG recordings
 
 The code is divided in two folders. The toolbox and CNN-LSTM:
 
-# Toolbox 
+## Toolbox 
 This folder contains the code for a toolbox to display ECG recordings. Running the `main.py` file will display the following toolbox:
 
 ![screenshot of toolbox](https://github.com/Kirina/Automated_ecg_assessment/blob/c9e659bf2a45ab2bf8e3cf973a6608e38baa158e/Toolbox_12_lead_example.png)
 
-# CNN-LSTM
+
+
+### Downloading and running Toolbox
+
+
+## CNN-LSTM
+
+### Downloading and running CNN-LSTM
