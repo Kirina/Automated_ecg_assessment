@@ -1,1 +1,1 @@
-# Automated_ecg_assessment
+# Automated ECG quality assessment
