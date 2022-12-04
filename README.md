@@ -29,12 +29,26 @@ The CNN-LSTM runs in python 3.8.11
 The `requirements_cnn_lstm.txt` file contains all the packages needed to run the CNN-LSTM notebooks. 
 `$ pip install -r requirements_cnn_lstm.txt` should download all the packages needed to run the CNN-LSTM notebooks. 
 
+The CinC11 dataset used is the relabeled version by [Kramer](https://github.com/LinusKra/ECGAssess)
+
 There are three versions of the CNN-LSTM notebook with different datasets:
 #### CinC11 and CinC17 unbalanced
-Uses the following files: `parameters_CINC11CINC17_unbalanced.py`, `generate_CINC11_CINC17_dataset.ipynb`, `generate_BUTQDB_dataset`, `data_storage_utils.py`, `data_preprocessing_utils.py`, `CNN_LSTM_train_CINC11CINC17_unbalanced_test_butqdb.ipynb`
+Uses the following files: `parameters_CINC11CINC17_unbalanced.py`, `generate_CINC11_CINC17_dataset.ipynb`, `generate_BUTQDB_dataset.ipynb`, `data_storage_utils.py`, `data_preprocessing_utils.py`, `CNN_LSTM_train_CINC11CINC17_unbalanced_test_butqdb.ipynb`
+
+1. Change the path variable names in the `parameters_CINC11CINC17_unbalanced.py` file. 
+2. Generate the datasets with `generate_CINC11_CINC17_dataset.ipynb` in this file change the parameters import to `from parameters_CINC11CINC17_unbalanced import parameters`. And generate the test dataset with `generate_BUTQDB_dataset.ipynb`.
+3. Run `CNN_LSTM_train_CINC11CINC17_unbalanced_test_butqdb.ipynb`
+
 #### CinC11 and CinC17 balanced
-Uses the following files: `parameters_CINC11CINC17_balanced.py`, `generate_CINC11_CINC17_dataset.ipynb`, `generate_BUTQDB_dataset`, `data_storage_utils.py`, `data_preprocessing_utils.py`, `CNN_LSTM_train_CINC11CINC17_balanced_test_butqdb.ipynb`
+Uses the following files: `parameters_CINC11CINC17_balanced.py`, `generate_CINC11_CINC17_dataset.ipynb`, `generate_BUTQDB_dataset.ipynb`, `data_storage_utils.py`, `data_preprocessing_utils.py`, `CNN_LSTM_train_CINC11CINC17_balanced_test_butqdb.ipynb`
+
+1. Change the path variable names in the `parameters_CINC11CINC17_balanced.py` file. 
+2. Generate the datasets with `generate_CINC11_CINC17_dataset.ipynb` in this file change the parameters import to `from parameters_CINC11CINC17_balanced import parameters`. And generate the test dataset with `generate_BUTQDB_dataset.ipynb`.
+3. Run `CNN_LSTM_train_CINC11CINC17_balanced_test_butqdb.ipynb`
+
 #### Kramer
 Uses the following files: `parameters_kramer.py`, `generate_kramer_dataset_train_and_test.ipynb`, `data_storage_utils.py`, `data_preprocessing_utils.py`, `CNN_LSTM_train_kramer_test_kramer.ipynb`
-
- The CinC11 dataset used is the relabeled version by [Kramer](https://github.com/LinusKra/ECGAssess)
+ 
+ 1. Change the path variable names in the `parameters_kramer.py` file. 
+2. Generate the datasets with `generate_kramer_dataset_train_and_test.ipynb` in this file change the parameters import to `from parameters_kramer import parameters`.
+3. Run `CNN_LSTM_train_kramer_test_kramer.ipynb`
