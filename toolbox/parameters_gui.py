@@ -1,6 +1,8 @@
 def parameters_gui():
     parameters = {
-        'path_model' : 'path_to_model_save_location', 
+#         'path_training_data' : 'C:\\Users\\kirin\\Documents\\Untitled Folder\\Code Python toolbox\\ECGAssess-main\\Code\\training_data', 
+        'path_model' : 'C:\\Users\\kirin\\Documents\\Untitled Folder\\Code Python toolbox\\ECGAssess-main\\Code\\model', 
+        'path_save_wav' : 'C:\\Users\\kirin\\Documents\\Untitled Folder\\Code Python toolbox\\ECGAssess-main\\Code\\wav_processing', 
         'name_model' : 'CNN_LSTM_model_cinc11cinc17', 
         'data_length' : 5000,   # datapoints
         'wav_data_range' : 32767, 
