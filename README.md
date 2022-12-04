@@ -9,17 +9,18 @@ This folder contains the code for a toolbox to display ECG recordings. Running t
 
 ![screenshot of toolbox](https://github.com/Kirina/Automated_ecg_assessment/blob/c9e659bf2a45ab2bf8e3cf973a6608e38baa158e/Toolbox_12_lead_example.png)
 
-Clinking the `Import Data` button will open the file explorer where you can select an ECG recording to analyse. This data should be 10 seconds, 500 Hz and between 1 and 12 leads (data shape: nr_leads x 5000). The toolbox is currently able to accept files with the following extensions: .txt, .csv, .hea, .xls, .xlsx, and .wav.. Clicking the `Process` button will display a results table with the results of individual quality assessment algorithms and the final consensus. 
-
-### Downloading and running Toolbox
-The toolbox requires the CNN-LSTM model to run. So, to run the toolbox, the 
-The `requirements_toolbox.txt` file in the toolbox folder contains all the packages needed to run the toolbox. 
-`$ pip install -r requirements_toolbox.txt` should download all the packages needed to run the toolbox. 
+Clinking the `Import Data` button will open the file explorer where you can select an ECG recording to analyse. This data should be 10 seconds, 500 Hz and between 1 and 12 leads (data shape: nr_leads x 5000). The toolbox is currently able to accept files with the following extensions: .txt, .csv, .hea, .xls, .xlsx, and .wav.. Clicking the `Process` button will display a results table with the results of individual quality assessment algorithms and the final consensus.  
 
 ## CNN-LSTM
+
+## Running Toolbox and CNN-LSTM
 
 ### Downloading and running CNN-LSTM
 The CNN-LSTM runs in python 3.8.11
 The `requirements_cnn_lstm.txt` file contains all the packages needed to run the CNN-LSTM notebooks. 
 `$ pip install -r requirements_cnn_lstm.txt` should download all the packages needed to run the CNN-LSTM notebooks. 
 
+### Downloading and running Toolbox
+The toolbox requires the CNN-LSTM model to run. So, to run the toolbox, the CNN-LSTM needs to be run and the model saved. The path to the model needs to be changed in the `parameters_gui` file. 
+The `requirements_toolbox.txt` file in the toolbox folder contains all the packages needed to run the toolbox. 
+`$ pip install -r requirements_toolbox.txt` should download all the packages needed to run the toolbox.
