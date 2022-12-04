@@ -15,12 +15,26 @@ Clinking the `Import Data` button will open the file explorer where you can sele
 
 ## Running Toolbox and CNN-LSTM
 
+### Downloading and running Toolbox
+The toolbox requires the CNN-LSTM model to run. A saved model in the `CNN_LSTM/saved_model` folder can be used. Alternatively, you can run and save the model yourself. How to do this is explained in the next section. 
+
+The path to the model needs to be changed in the `parameters_gui` file. 
+The `requirements_toolbox.txt` file in the toolbox folder contains all the packages needed to run the toolbox. 
+`$ pip install -r requirements_toolbox.txt` should download all the packages needed to run the toolbox in your virtual environment.
+
+Running the `toolbox/main.py` file will display the toolbox. 
+
 ### Downloading and running CNN-LSTM
 The CNN-LSTM runs in python 3.8.11
 The `requirements_cnn_lstm.txt` file contains all the packages needed to run the CNN-LSTM notebooks. 
 `$ pip install -r requirements_cnn_lstm.txt` should download all the packages needed to run the CNN-LSTM notebooks. 
 
-### Downloading and running Toolbox
-The toolbox requires the CNN-LSTM model to run. So, to run the toolbox, the CNN-LSTM needs to be run and the model saved. The path to the model needs to be changed in the `parameters_gui` file. 
-The `requirements_toolbox.txt` file in the toolbox folder contains all the packages needed to run the toolbox. 
-`$ pip install -r requirements_toolbox.txt` should download all the packages needed to run the toolbox.
+There are three versions of the CNN-LSTM notebook with different datasets:
+#### CinC11 and CinC17 unbalanced
+Uses the following files: `parameters_CINC11CINC17_unbalanced.py`, `generate_CINC11_CINC17_dataset.ipynb`, `generate_BUTQDB_dataset`, `data_storage_utils.py`, `data_preprocessing_utils.py`, `CNN_LSTM_train_CINC11CINC17_unbalanced_test_butqdb.ipynb`
+#### CinC11 and CinC17 balanced
+Uses the following files: `parameters_CINC11CINC17_balanced.py`, `generate_CINC11_CINC17_dataset.ipynb`, `generate_BUTQDB_dataset`, `data_storage_utils.py`, `data_preprocessing_utils.py`, `CNN_LSTM_train_CINC11CINC17_balanced_test_butqdb.ipynb`
+#### Kramer
+Uses the following files: `parameters_kramer.py`, `generate_kramer_dataset_train_and_test.ipynb`, `data_storage_utils.py`, `data_preprocessing_utils.py`, `CNN_LSTM_train_kramer_test_kramer.ipynb`
+
+ The CinC11 dataset used is the relabeled version by ![Kramer](https://github.com/LinusKra/ECGAssess)
