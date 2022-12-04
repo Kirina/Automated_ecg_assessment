@@ -18,6 +18,7 @@ The `requirements_toolbox.txt` file in the toolbox folder contains all the packa
 ## CNN-LSTM
 
 ### Downloading and running CNN-LSTM
+The CNN-LSTM runs in python 3.8.11
 The `requirements_cnn_lstm.txt` file contains all the packages needed to run the CNN-LSTM notebooks. 
 `$ pip install -r requirements_cnn_lstm.txt` should download all the packages needed to run the CNN-LSTM notebooks. 
 
