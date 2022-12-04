@@ -12,6 +12,7 @@ This folder contains the code for a toolbox to display ECG recordings. Running t
 Clinking the `Import Data` button will open the file explorer where you can select an ECG recording to analyse. This data should be 10 seconds, 500 Hz and between 1 and 12 leads (data shape: nr_leads x 5000). The toolbox is currently able to accept files with the following extensions: .txt, .csv, .hea, .xls, .xlsx, and .wav.. Clicking the `Process` button will display a results table with the results of individual quality assessment algorithms and the final consensus. 
 
 ### Downloading and running Toolbox
+The toolbox requires the CNN-LSTM model to run. So, to run the toolbox, the 
 The `requirements_toolbox.txt` file in the toolbox folder contains all the packages needed to run the toolbox. 
 `$ pip install -r requirements_toolbox.txt` should download all the packages needed to run the toolbox. 
 
