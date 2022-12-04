@@ -37,4 +37,4 @@ Uses the following files: `parameters_CINC11CINC17_balanced.py`, `generate_CINC1
 #### Kramer
 Uses the following files: `parameters_kramer.py`, `generate_kramer_dataset_train_and_test.ipynb`, `data_storage_utils.py`, `data_preprocessing_utils.py`, `CNN_LSTM_train_kramer_test_kramer.ipynb`
 
- The CinC11 dataset used is the relabeled version by ![Kramer](https://github.com/LinusKra/ECGAssess)
+ The CinC11 dataset used is the relabeled version by [Kramer](https://github.com/LinusKra/ECGAssess)
