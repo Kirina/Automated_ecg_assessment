@@ -1,9 +1,9 @@
-tk
-pandas
-pathlib
-matplotlib
-numpy
-scipy
-neurokit2
-tensorflow
+tk==0.1.0
+pandas==1.5.2
+pathlib==1.0.1
+matplotlib==3.6.2
+numpy==1.23.5
+scipy==1.9.3
+neurokit2==0.2.2
+tensorflow==2.11.0
 wfdb==4.0.0
