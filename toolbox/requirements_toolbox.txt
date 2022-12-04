@@ -1,0 +1,9 @@
+tk
+pandas
+pathlib
+matplotlib
+numpy
+scipy
+neurokit2
+tensorflow
+wfdb==4.0.0
