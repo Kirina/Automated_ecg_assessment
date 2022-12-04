@@ -13,7 +13,7 @@ Clinking the `Import Data` button will open the file explorer where you can sele
 
 ## CNN-LSTM
 
-## Running Toolbox and CNN-LSTM
+### Running Toolbox and CNN-LSTM
 
 ### Downloading and running Toolbox
 The toolbox requires the CNN-LSTM model to run. A saved model in the `CNN_LSTM/saved_model` folder can be used. Alternatively, you can run and save the model yourself. How to do this is explained in the next section. 
