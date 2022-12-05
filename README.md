@@ -14,6 +14,7 @@ Clinking the `Import Data` button will open the file explorer where you can sele
 ## CNN-LSTM
 
 The CNN part of the algorithm consists of three blocks that downsample the data through convolutions. Each block consists of a CNN layer, a max pooling layer, and a dropout layer.
+![model diagram](https://github.com/Kirina/Automated_ecg_assessment/blob/256440ff3fab25705e1a2d2c4747787bf8c1c3c4/diagram_model_horizontall.png)
 
 ## Running Toolbox and CNN-LSTM
 
